@@ -20,9 +20,9 @@ namespace Basket.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddStackExchangeRedisCache(o =>
+            services.AddStackExchangeRedisCache(options =>
             {
-                o.Configuration = Configuration.GetValue<string>("CacheSettings:ConnectionString");
+                options.Configuration = Configuration.GetValue<string>("CacheSettings:ConnectionString");
             });
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddControllers();
