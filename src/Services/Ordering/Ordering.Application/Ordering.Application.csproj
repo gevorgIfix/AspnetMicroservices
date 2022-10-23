@@ -17,12 +17,4 @@
     <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-	  <Folder Include="Behaviours\" />
-	  <Folder Include="Contracts\Infrastructure\" />
-	  <Folder Include="Contracts\Persistence\" />
-	  <Folder Include="Mappings\" />
-	  <Folder Include="Models\" />
-  </ItemGroup>
-
-</Project>
+ </Project>
